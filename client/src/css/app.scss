@@ -1,0 +1,32 @@
+// app global css in SCSS form
+.title-font {
+    font-family: 'Rochester', cursive;
+}
+
+.paragraph-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-card-lg {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.home-card-sm {
+    width: 100%;
+    max-width: 800px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.center-height {
+    margin: auto;
+    height: 50%;
+}
