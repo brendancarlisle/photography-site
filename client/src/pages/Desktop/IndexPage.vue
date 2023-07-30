@@ -46,7 +46,8 @@
           gorgeous couple's portraits that will make you swoon - I am your girl!
         </p>
         <q-btn
-          flat
+          unelevated
+          color="grey-3"
           class="paragraph-font text-h4"
           text-color="primary"
           size="xl"
@@ -67,7 +68,8 @@
               crime podcasts, themed girl dates with my friends, and all things Disney!
             </div>
             <q-btn
-              flat
+              unelevated
+              color="grey-3"
               size="xl"
               text-color="primary"
               class="paragraph-font"
@@ -94,7 +96,8 @@
             </div>
             <div class="text-body2 text-right q-ma-md">-{{ getReviewer() }}</div>
             <q-btn
-              flat
+              unelevated
+              color="grey-3"
               size="xl"
               class="q-pt-xs paragraph-font"
               text-color="primary"
@@ -106,9 +109,9 @@
         </q-card-section>
       </q-card>
     </div>
-    <div class="home-card-lg q-px-md text-center q-pt-xl">
+    <div class="center home-card-lg q-px-md text-center q-pt-xl">
       <q-card flat class="bg-grey-1">
-        <div class="text-h3 col-11 text-primary title-font q-pb-lg">
+        <div class="text-h3 text-primary title-font q-pb-lg">
           Featured Weddings & Engagements
         </div>
         <q-card-section>
@@ -129,7 +132,7 @@
       </q-card>
     </div>
     <div class="flex-break" />
-    <div class="row center text-h3 text-primary title-font text-center q-pt-xl q-pb-md">
+    <div class=" center offset-1 text-h3 text-primary title-font text-center q-pt-xl q-pb-md">
       Let's Chat!
     </div>
     <div class="flex-break" />
@@ -146,12 +149,12 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { computed, defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "IndexPage",
   setup() {
-    let reviewIndex = 0;
+    let reviewIndex = ref(0);
 
     const reviews = [
       {
@@ -233,23 +236,23 @@ export default defineComponent({
     // reviews.length = total number of reviews, but array index is total - 1,
     // therefore, we must check index + 2
     function incrementIndex() {
-      if (reviewIndex + 2 > reviews.length) {
-        reviewIndex = 0;
+      if (reviewIndex.value + 2 > reviews.length) {
+        reviewIndex.value = 0;
       } else {
-        reviewIndex++;
+        reviewIndex.value++;
       }
     }
 
     function getReview() {
-      return reviews[reviewIndex].review;
+      return reviews[reviewIndex.value].review;
     }
 
     function getReviewImg() {
-      return reviews[reviewIndex].img;
+      return reviews[reviewIndex.value].img;
     }
 
     function getReviewer() {
-      return reviews[reviewIndex].reviewer;
+      return reviews[reviewIndex.value].reviewer;
     }
 
     function routeToGallery() {}

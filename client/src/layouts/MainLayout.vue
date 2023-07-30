@@ -19,7 +19,6 @@
         <q-space />
         <q-route-tab to="/investment" label="Investment" />
         <q-route-tab to="/contact" label="Contact" />
-        <q-route-tab to="/blog" label="Blog" />
       </q-tabs>
     </q-header>
 

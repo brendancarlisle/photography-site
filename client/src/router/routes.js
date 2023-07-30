@@ -20,14 +20,6 @@ const desktopRoutes = [
   },
 
   {
-    path: '/blog',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('src/pages/Desktop/BlogPage.vue') }
-    ]
-  },
-
-  {
     path: '/contact',
     component: () => import('layouts/MainLayout.vue'),
     children: [
@@ -39,7 +31,8 @@ const desktopRoutes = [
     path: '/gallery',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('src/pages/Desktop/GalleryPage.vue') }
+      { path: '', component: () => import('src/pages/Desktop/GalleryPage.vue') },
+      {path: ':galleryName', component: () => import('src/pages/Desktop/GalleryDisplayPage.vue')}
     ]
   },
 

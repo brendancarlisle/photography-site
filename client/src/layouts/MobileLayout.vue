@@ -25,9 +25,6 @@
               <q-item clickable to="/contact">
                 CONTACT
               </q-item>
-              <q-item clickable to="/blog">
-                BLOG
-              </q-item>
             </q-list>
             
           </q-card-section>
