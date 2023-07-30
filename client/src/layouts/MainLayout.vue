@@ -1,15 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf" class="q-pa-md bg-grey-1">
     <q-header reveal class="bg-grey-1 text-primary" height-hint="98">
-      <!-- <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-avatar>
-          Title
-        </q-toolbar-title>
-      </q-toolbar> -->
-
       <q-tabs align="left" class="paragraph-font">
         <q-route-tab to="/home" label="Home" />
         <q-route-tab to="/about" label="About" />

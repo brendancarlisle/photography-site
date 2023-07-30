@@ -1,6 +1,9 @@
 <template>
   <q-page padding>
-    <div class="center q-px-md text-center q-pt-xl">
+    <div class="q-pa-xl text-h3 text-center text-primary title-font">
+      Coming Soon!
+    </div>
+    <!-- <div class="center q-px-md text-center q-pt-xl">
       <q-card flat class="bg-grey-1">
         <div class="text-h3 text-primary title-font q-pb-lg">
           Wedding & Engagement Photo Galleries
@@ -33,7 +36,7 @@
         height="600"
         src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc"
       />
-    </div>
+    </div> -->
   </q-page>
 </template>
 

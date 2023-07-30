@@ -1,35 +1,19 @@
 <template>
-<q-page class=" flex-grow paragraph-font q-pa-md">
+  <q-page class=" flex-grow paragraph-font q-pa-md">
     <div class="row">
       <q-card flat class="col-grow bg-grey-1">
         <!-- Carousel of photos to display -->
-        <q-carousel
-          animated
-          v-model="slide"
-          navigation
-          infinite
-          :autoplay="autoplay"
-          style="width: 100%"
-          >
+        <q-carousel arrows animated v-model="slide" navigation infinite class="bg-grey-1 center" :autoplay="autoplay"
+          style="width: 90%">
           <!--TODO: Update size and photos  -->
-          <q-carousel-slide
-            :name="1"
-            img-src="https://cdn.quasar.dev/img/mountains.jpg"
-          />
-          <q-carousel-slide
-            :name="2"
-            img-src="https://cdn.quasar.dev/img/parallax1.jpg"
-          />
-          <q-carousel-slide
-            :name="3"
-            img-src="https://cdn.quasar.dev/img/parallax2.jpg"
-          />
-          <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-          <q-carousel-slide
-            :name="5"
-            img-src="https://cdn.quasar.dev/img/mountains.jpg"
-          />
-        </q-carousel>
+          <q-carousel-slide :name="1" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel1.jpg"/>
+          <q-carousel-slide :name="2" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel2.jpg" />
+          <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel3.jpg"/>
+          <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel4.jpg"/>
+          <q-carousel-slide :name="5" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel5.jpg"/>
+          <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel7.jpg"/>
+          <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel8.jpg"/>
+          </q-carousel>
       </q-card>
     </div>
     <div class="row q-pa-lg q-pt-xl">
@@ -40,20 +24,13 @@
         <p class="text-h6 paragraph-font">
           JOYFUL, TIMELESS, & ROMANTIC IMAGES FOR MADLY IN LOVE COUPLES
         </p>
-        <p class="text-body1 paragraph-font">
+        <p class="text-body1 paragraph-font text-justify">
           If you want to look back on your wedding day and see the genuine laughter of the
           people you love, the emotional moments that brought tears to your eyes, and
           gorgeous couple's portraits that will make you swoon - I am your girl!
         </p>
-        <q-btn
-          unelevated
-          color="grey-3"
-          class="paragraph-font text-h4"
-          text-color="primary"
-          size="xl"
-          label="View the Pretty!"
-          to="/gallery"
-        />
+        <q-btn unelevated color="grey-3" class="paragraph-font text-h4" text-color="primary" size="xl"
+          label="View the Pretty!" to="/gallery" />
       </div>
     </div>
     <div class="row text-center q-pt-xl">
@@ -62,23 +39,16 @@
           <q-card-section class="q-pt-xl">
             <div class="text-h3 text-primary title-font">Hi, I'm Kayla!</div>
             <div class="text-h6 q-pt-md">LOVER OF LOVE & THE LITTLE THINGS</div>
-            <div class="text-body1 q-pa-md">
+            <div class="text-body1 q-pa-md text-justify">
               It's cheesy, but I LOVE love. My marriage, my family, my friends, my three
               adorable fur babies. For me, it's all about love! I'm a sucker for true
               crime podcasts, themed girl dates with my friends, and all things Disney!
             </div>
-            <q-btn
-              unelevated
-              color="grey-3"
-              size="xl"
-              text-color="primary"
-              class="paragraph-font"
-              label="Get to Know Me!"
-              to="/about"
-            />
+            <q-btn unelevated color="grey-3" size="xl" text-color="primary" class="paragraph-font" label="Get to Know Me!"
+              to="/about" />
           </q-card-section>
           <q-card-section class="col-5 flex flex-center">
-            <q-img class="rounded-borders q-pa-md" src="src/assets/img/IMG_0300.JPG" />
+            <q-img class="rounded-borders q-pa-md" src="src/assets/img/about/about-page2.jpg" />
           </q-card-section>
         </q-card-section>
       </q-card>
@@ -91,25 +61,17 @@
           </q-card-section>
           <q-card-section class="q-pt-xl">
             <div class="text-h3 text-primary title-font">Love Notes</div>
-            <div class="text-body1 text-wrap q-ma-md">
+            <div class="text-body1 text-wrap q-ma-md text-justify">
               {{ getReview() }}
             </div>
             <div class="text-body2 text-right q-ma-md">-{{ getReviewer() }}</div>
-            <q-btn
-              unelevated
-              color="grey-3"
-              size="xl"
-              class="q-pt-xs paragraph-font"
-              text-color="primary"
-              label="More"
-              icon-right="chevron_right"
-              @click="incrementIndex()"
-            />
+            <q-btn unelevated color="grey-3" size="xl" class="q-pt-xs paragraph-font" text-color="primary" label="More"
+              icon-right="chevron_right" @click="incrementIndex()" />
           </q-card-section>
         </q-card-section>
       </q-card>
     </div>
-    <div class="center home-card-lg q-px-md text-center q-pt-xl">
+    <!-- <div class="center home-card-lg q-px-md text-center q-pt-xl">
       <q-card flat class="bg-grey-1">
         <div class="text-h3 text-primary title-font q-pb-lg">
           Featured Weddings & Engagements
@@ -130,20 +92,15 @@
           </q-img>
         </q-card-section>
       </q-card>
-    </div>
+    </div> -->
     <div class="flex-break" />
     <div class=" center offset-1 text-h3 text-primary title-font text-center q-pt-xl q-pb-md">
       Let's Chat!
     </div>
     <div class="flex-break" />
     <div class="center" style="width: 70%">
-      <iframe
-        name="lc_contact_form"
-        frameborder="0"
-        width="100%"
-        height="600"
-        src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc"
-      />
+      <iframe name="lc_contact_form" frameborder="0" width="100%" height="600"
+        src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc" />
     </div>
   </q-page>
 </template>
@@ -154,6 +111,7 @@ import { computed, defineComponent, ref } from "vue";
 export default defineComponent({
   name: "IndexPage",
   setup() {
+
     let reviewIndex = ref(0);
 
     const reviews = [
@@ -167,7 +125,7 @@ export default defineComponent({
           "very easy and comfortable. We had never really been in a photoshoot before, but she set up our poses " +
           "perfectly and gave all the right cues to make sure we got an excellent variety of photos.",
         reviewer: "Owen & Claire",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "src/assets/img/home/reviews/review1.jpg",
       },
       {
         review:
@@ -180,7 +138,7 @@ export default defineComponent({
           "assistant were both extremely nice and friendly. I will forever be thankful for the for the wonderful photos we have to remind " +
           "us of our wedding day.",
         reviewer: "Nick & Claire",
-        img: "some img",
+        img: "src/assets/img/home/reviews/review2.jpg",
       },
       {
         review:
@@ -190,7 +148,7 @@ export default defineComponent({
           "captured because Kayla was always there and ready. We love every single one of our photos and get compliments " +
           "on them all the time. The process of working with Kayla was so fun and easy that I would recommend her to anyone!",
         reviewer: "Jordan & Madison",
-        img: "some img",
+        img: "src/assets/img/home/reviews/review3.jpg",
       },
     ];
 
@@ -255,7 +213,7 @@ export default defineComponent({
       return reviews[reviewIndex.value].reviewer;
     }
 
-    function routeToGallery() {}
+    function routeToGallery() { }
 
     return {
       slide: ref(1),
@@ -277,9 +235,11 @@ export default defineComponent({
 .flex-break {
   flex: 1 0 100% !important;
 }
+
 .row .flex-break {
   height: 0 !important;
 }
+
 .column .flex-break {
   width: 0 !important;
 }

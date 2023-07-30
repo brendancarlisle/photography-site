@@ -4,10 +4,10 @@ let routes = []
 
 const desktopRoutes = [
   {
-    path: '/',
+    path: '/home',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/home', component: () => import('src/pages/Desktop/IndexPage.vue') }
+      { path: '', component: () => import('src/pages/Desktop/IndexPage.vue') }
     ]
   },
 
