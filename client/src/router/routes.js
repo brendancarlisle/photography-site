@@ -69,14 +69,6 @@ const mobileRoutes = [
   },
 
   {
-    path: '/blog',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('src/pages/Desktop/BlogPage.vue') }
-    ]
-  },
-
-  {
     path: '/contact',
     component: () => import('layouts/MainLayout.vue'),
     children: [
