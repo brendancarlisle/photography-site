@@ -4,7 +4,7 @@ let routes = []
 
 const desktopRoutes = [
   {
-    path: '/home',
+    path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('src/pages/Desktop/IndexPage.vue') }
@@ -56,7 +56,7 @@ const mobileRoutes = [
     path: '/',
     component: () => import('layouts/MobileLayout.vue'),
     children: [
-      { path: '/home', component: () => import('src/pages/Mobile/IndexPage.vue') }
+      { path: '/', component: () => import('src/pages/Mobile/IndexPage.vue') }
     ]
   },
 
@@ -99,10 +99,11 @@ const mobileRoutes = [
   }
 ]
 
-if (Platform.is.desktop) {
-  routes = desktopRoutes
-} else {
-  routes = mobileRoutes
-}
+// if (Platform.is.desktop) {
+//   routes = desktopRoutes
+// } else {
+//   routes = mobileRoutes
+// }
+routes = desktopRoutes;
 
 export default routes
