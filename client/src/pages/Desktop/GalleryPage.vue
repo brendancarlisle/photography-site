@@ -1,8 +1,32 @@
 <template>
-  <q-page padding>
-    <div class="q-pa-xl text-h3 text-center text-primary title-font">
-      Coming Soon!
+  <q-page class="q-pa-lg">
+    <div class="q-pb-lg text-h3 text-center text-primary title-font">
+      Gallery
     </div>
+    <div class="row">
+        <q-img class="col q-ml-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery1.jpg" />
+        <q-img class="col q-ma-xs" src="static/img/gallery/gallery2.jpg" />
+        <q-img class="col q-mr-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery4.jpg" />
+    </div>
+    <div class="row">
+      <q-img class="col q-ml-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery3.jpg" />
+      <q-img class="col q-mr-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery5.jpg" />
+      <!-- <q-img class="col q-ma-xs" src="static/img/gallery/gallery4.jpg" /> -->
+  </div>
+  <div class="row">
+    <q-img class="col q-mt-xs q-mb-xs q-mr-xs q-ml-xl" src="static/img/gallery/gallery6.jpg" />
+    <q-img class="col q-ma-xs" src="static/img/gallery/gallery9.jpg" />
+    <q-img class="col q-mt-xs q-mb-xs q-ml-xs q-mr-xl" src="static/img/gallery/gallery11.jpg" />
+</div>
+<div class="row">
+  <q-img class="col q-ml-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery8.jpg" />
+  <q-img class="col q-mr-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery7.jpg" />
+</div>
+<div class="row">
+  <q-img class="col q-ml-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery13.jpg" />
+  <q-img class="col q-mr-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery14.jpg" />
+</div>
+    
     <!-- <div class="center q-px-md text-center q-pt-xl">
       <q-card flat class="bg-grey-1">
         <div class="text-h3 text-primary title-font q-pb-lg">
@@ -24,7 +48,7 @@
           </q-img>
         </q-card-section>
       </q-card>
-    </div>
+    </div> -->
     <div class=" center offset-1 text-h3 text-primary title-font text-center q-pt-xl q-pb-md">
       Let's Chat!
     </div>
@@ -36,7 +60,7 @@
         height="600"
         src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc"
       />
-    </div> -->
+    </div>
   </q-page>
 </template>
 

@@ -43,9 +43,7 @@
             I have three dogs, Stella, Violet and Oliver, who were all rescues! Violet and Oliver are actually from the
             same litter, even though we got them at different times! <br> <br>
             Traveling gives me so much joy! I don't care if its the beach, mountains, or an amusement park, I just love
-            the joy and experiences of travel. <br> <br>
-            My best friends and I are often doing themed girl dates! Some of my favorites so far have been: Clue Murder
-            Mystery, 90's, and The Bachelor!
+            the joy and experiences of travel.
           </div>
         </q-card-section>
       </q-card-section>
