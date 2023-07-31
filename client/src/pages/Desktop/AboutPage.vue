@@ -3,7 +3,7 @@
     <q-card flat class="col-12 home-card bg-grey-1">
       <q-card-section horizontal>
         <q-card-section class="col-5 q-py-md">
-          <q-img fit="scale-down" class="rounded-borders q-pa-sm" src="src/assets/img/about/about-page1.jpg"
+          <q-img fit="scale-down" class="rounded-borders q-pa-sm" src="public/static/img/about/about-page1.jpg"
             style="height: 80%;" />
 
         </q-card-section>
@@ -78,7 +78,7 @@
           </div>
         </q-card-section>
         <q-card-section class="col-5">
-          <q-img fit="scale-down" class="rounded-borders q-pa-sm" src="src/assets/img/about/about-page2.jpg"
+          <q-img fit="scale-down" class="rounded-borders q-pa-sm" src="public/static/img/about/about-page2.jpg"
           style="height: 80%;" />
         </q-card-section>
       </q-card-section>

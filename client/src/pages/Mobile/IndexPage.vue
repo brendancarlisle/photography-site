@@ -77,7 +77,7 @@
             />
           </q-card-section>
           <q-card-section class="col-5 flex flex-center">
-            <q-img class="rounded-borders q-pa-md" src="src/assets/img/IMG_0300.JPG" />
+            <q-img class="rounded-borders q-pa-md" src="public/static/img/IMG_0300.JPG" />
           </q-card-section>
         </q-card-section>
       </q-card>
@@ -165,7 +165,7 @@ export default defineComponent({
           "very easy and comfortable. We had never really been in a photoshoot before, but she set up our poses " +
           "perfectly and gave all the right cues to make sure we got an excellent variety of photos.",
         reviewer: "Owen & Claire",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
       },
       {
         review:
@@ -195,7 +195,7 @@ export default defineComponent({
     const featuredWeds = [
       {
         title: "Sunflower Hill Farm Wedding",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 1,
         galleryURL: "/gallery",
       },
@@ -213,7 +213,7 @@ export default defineComponent({
       },
       {
         title: "Hane Valley Engagement",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 4,
         galleryURL: "/gallery",
       },
@@ -225,7 +225,7 @@ export default defineComponent({
       },
       {
         title: "St. Louis Public Library Engagement",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 6,
         galleryURL: "/gallery",
       },

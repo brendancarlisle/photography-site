@@ -6,13 +6,13 @@
         <q-carousel arrows animated v-model="slide" navigation infinite class="bg-grey-1 center" :autoplay="autoplay"
           style="width: 90%">
           <!--TODO: Update size and photos  -->
-          <q-carousel-slide :name="1" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel1.jpg"/>
-          <q-carousel-slide :name="2" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel2.jpg" />
-          <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel3.jpg"/>
-          <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel4.jpg"/>
-          <q-carousel-slide :name="5" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel5.jpg"/>
-          <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel7.jpg"/>
-          <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="src/assets/img/home/carousel/carousel8.jpg"/>
+          <q-carousel-slide :name="1" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel1.jpg"/>
+          <q-carousel-slide :name="2" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel2.jpg" />
+          <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel3.jpg"/>
+          <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel4.jpg"/>
+          <q-carousel-slide :name="5" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel5.jpg"/>
+          <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel7.jpg"/>
+          <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="public/static/img/home/carousel/carousel8.jpg"/>
           </q-carousel>
       </q-card>
     </div>
@@ -48,7 +48,7 @@
               to="/about" />
           </q-card-section>
           <q-card-section class="col-5 flex flex-center">
-            <q-img class="rounded-borders q-pa-md" src="src/assets/img/about/about-page2.jpg" />
+            <q-img class="rounded-borders q-pa-md" src="public/static/img/about/about-page2.jpg" />
           </q-card-section>
         </q-card-section>
       </q-card>
@@ -125,7 +125,7 @@ export default defineComponent({
           "very easy and comfortable. We had never really been in a photoshoot before, but she set up our poses " +
           "perfectly and gave all the right cues to make sure we got an excellent variety of photos.",
         reviewer: "Owen & Claire",
-        img: "src/assets/img/home/reviews/review1.jpg",
+        img: "public/static/img/home/reviews/review1.jpg",
       },
       {
         review:
@@ -138,7 +138,7 @@ export default defineComponent({
           "assistant were both extremely nice and friendly. I will forever be thankful for the for the wonderful photos we have to remind " +
           "us of our wedding day.",
         reviewer: "Nick & Claire",
-        img: "src/assets/img/home/reviews/review2.jpg",
+        img: "public/static/img/home/reviews/review2.jpg",
       },
       {
         review:
@@ -148,14 +148,14 @@ export default defineComponent({
           "captured because Kayla was always there and ready. We love every single one of our photos and get compliments " +
           "on them all the time. The process of working with Kayla was so fun and easy that I would recommend her to anyone!",
         reviewer: "Jordan & Madison",
-        img: "src/assets/img/home/reviews/review3.jpg",
+        img: "public/static/img/home/reviews/review3.jpg",
       },
     ];
 
     const featuredWeds = [
       {
         title: "Sunflower Hill Farm Wedding",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 1,
         galleryURL: "/gallery",
       },
@@ -173,7 +173,7 @@ export default defineComponent({
       },
       {
         title: "Hane Valley Engagement",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 4,
         galleryURL: "/gallery",
       },
@@ -185,7 +185,7 @@ export default defineComponent({
       },
       {
         title: "St. Louis Public Library Engagement",
-        img: "src/assets/img/IMG_0300.JPG",
+        img: "public/static/img/IMG_0300.JPG",
         id: 6,
         galleryURL: "/gallery",
       },
