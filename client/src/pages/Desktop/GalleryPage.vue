@@ -11,7 +11,6 @@
     <div class="row">
       <q-img class="col q-ml-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery3.jpg" />
       <q-img class="col q-mr-xl q-mb-xs q-mt-xs q-mr-xs" src="static/img/gallery/gallery5.jpg" />
-      <!-- <q-img class="col q-ma-xs" src="static/img/gallery/gallery4.jpg" /> -->
   </div>
   <div class="row">
     <q-img class="col q-mt-xs q-mb-xs q-mr-xs q-ml-xl" src="static/img/gallery/gallery6.jpg" />
