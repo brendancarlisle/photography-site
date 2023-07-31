@@ -50,7 +50,7 @@ export default defineComponent({
     const weds = [
       {
         title: "Sunflower Hill Farm Wedding",
-        img: "public/static/img/IMG_0300.JPG",
+        img: "static/img/IMG_0300.JPG",
         id: 1,
         galleryName: "sunflower-hill-farm-wedding"
       },
@@ -68,7 +68,7 @@ export default defineComponent({
       },
       {
         title: "Hane Valley Engagement",
-        img: "public/static/img/IMG_0300.JPG",
+        img: "static/img/IMG_0300.JPG",
         id: 4,
         galleryName: "hane-valley-engagement",
       },
@@ -80,7 +80,7 @@ export default defineComponent({
       },
       {
         title: "St. Louis Public Library Engagement",
-        img: "public/static/img/IMG_0300.JPG",
+        img: "static/img/IMG_0300.JPG",
         id: 6,
         galleryName: "gallery",
       },

@@ -3,7 +3,7 @@
     <q-card flat class="col-12 home-card bg-grey-1">
       <q-card-section horizontal>
         <q-card-section class="col-5 q-ma-md">
-          <q-img class="rounded-borders" src="public/static/img/investment/investment1.jpg" style="height: 100%;" />
+          <q-img class="rounded-borders" src="static/img/investment/investment1.jpg" style="height: 100%;" />
         </q-card-section>
         <q-card-section>
           <div class="paragraph-font text-justify text-body1 q-pt-md">
@@ -40,7 +40,7 @@
           </div>
         </q-card-section>
         <q-card-section class="col-5 q-ma-md">
-          <q-img class="rounded-borders" src="public/static/img/investment/investment2.jpg"
+          <q-img class="rounded-borders" src="static/img/investment/investment2.jpg"
             style="height: 100%; width: 90%" />
         </q-card-section>
       </q-card-section>
@@ -48,7 +48,7 @@
     <q-card flat class="col-12 home-card bg-grey-1">
       <q-card-section horizontal>
         <q-card-section class="col-5 q-ma-md">
-          <q-img class="rounded-borders" src="public/static/img/investment/investment3.jpg" style="height: 100%;" />
+          <q-img class="rounded-borders" src="static/img/investment/investment3.jpg" style="height: 100%;" />
         </q-card-section>
         <div class="text-center center paragraph-font text-body1 q-pa-xl col-7">
           <q-btn unelevated color="grey-3" class="paragraph-font text-h4" text-color="primary" size="lg"
