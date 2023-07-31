@@ -11,8 +11,8 @@
           <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel3.jpg"/>
           <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel4.jpg"/>
           <q-carousel-slide :name="5" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel5.jpg"/>
-          <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel7.jpg"/>
-          <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel8.jpg"/>
+          <!-- <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel7.jpg"/>
+          <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel8.jpg"/> -->
           </q-carousel>
       </q-card>
     </div>
