@@ -6,10 +6,10 @@
         <q-carousel arrows animated v-model="slide" navigation infinite class="bg-grey-1 center" :autoplay="autoplay"
           style="width: 90%">
           <!--TODO: Update size and photos  -->
-          <q-carousel-slide :name="1" class="column no-wrap full-height" img-src="static/img/home/carousel/gallery8.jpg"/>
+          <q-carousel-slide :name="1" class="column no-wrap full-height" img-src="static/img/gallery/gallery8.jpg"/>
           <q-carousel-slide :name="2" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel2.jpg" />
-          <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="static/img/home/carousel/gallery7.jpg"/>
-          <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="static/img/home/carousel/gallery3.jpg"/>
+          <q-carousel-slide :name="3" class="column no-wrap full-height" img-src="static/img/gallery/gallery7.jpg"/>
+          <q-carousel-slide :name="4" class="column no-wrap full-height" img-src="static/img/gallery/gallery3.jpg"/>
           <q-carousel-slide :name="5" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel5.jpg"/>
           <!-- <q-carousel-slide :name="7" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel7.jpg"/>
           <q-carousel-slide :name="8" class="column no-wrap full-height" img-src="static/img/home/carousel/carousel8.jpg"/> -->
