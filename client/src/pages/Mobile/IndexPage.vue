@@ -51,12 +51,8 @@
       </q-card>
     </div>
     <div class="row text-center q-pt-xl">
-      <q-card flat class="col-grow home-card bg-grey-1">
-        <q-card-section horizontal>
-          <q-card-section class="col-5 flex flex-center">
-            <q-img class="rounded-borders" :src="getReviewImg()" style="height: 60%; width: 110%;"/>
-          </q-card-section>
-          <q-card-section class="q-pt-lg">
+      <q-card flat class="col bg-grey-1">
+          <q-card-section class="q-pt-sm">
             <div class="text-h5 text-primary title-font q-ma-xs">Love Notes</div>
             <div class="text-body2 text-justify">
               {{ getReview() }}
@@ -64,7 +60,6 @@
             <div class="text-caption text-right q-ma-xs">-{{ getReviewer() }}</div>
             <q-btn flat size="md" class="q-pt-xs paragraph-font" text-color="primary" label="More"
               icon-right="chevron_right" @click="incrementIndex()" />
-          </q-card-section>
         </q-card-section>
       </q-card>
     </div>
@@ -85,7 +80,7 @@
       </q-card>
     </div> -->
     <div class="flex-break" />
-    <div class="text-center offset-1 text-h5 text-primary title-font q-pl-md q-pt-nd q-pb-md">
+    <div class="text-center offset-1 text-h5 text-primary title-font q-pl-md q-pt-md q-pb-md">
       Let's Chat!
     </div>
     <div class="flex-break" />
