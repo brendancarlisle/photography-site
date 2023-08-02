@@ -3,33 +3,13 @@
     <div class="row">
       <q-card flat class="col-grow bg-grey-1">
         <!-- Carousel of photos to display -->
-        <q-carousel
-          animated
-          v-model="slide"
-          navigation
-          infinite
-          :autoplay="autoplay"
-          class="q-pa-sm"
-          height="200px"
-        >
+        <q-carousel animated v-model="slide" navigation infinite :autoplay="autoplay" class="q-pa-sm" height="200px">
           <!--TODO: Update size and photos  -->
-          <q-carousel-slide
-            :name="1"
-            img-src="https://cdn.quasar.dev/img/mountains.jpg"
-          />
-          <q-carousel-slide
-            :name="2"
-            img-src="https://cdn.quasar.dev/img/parallax1.jpg"
-          />
-          <q-carousel-slide
-            :name="3"
-            img-src="https://cdn.quasar.dev/img/parallax2.jpg"
-          />
-          <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-          <q-carousel-slide
-            :name="5"
-            img-src="https://cdn.quasar.dev/img/mountains.jpg"
-          />
+          <q-carousel-slide :name="1" img-src="static/img/gallery/gallery5.jpg" />
+          <q-carousel-slide :name="2" img-src="static/img/home/carousel/carousel2.jpg" />
+          <q-carousel-slide :name="3" img-src="static/img/gallery/gallery7.jpg" />
+          <q-carousel-slide :name="4" img-src="static/img/gallery/gallery10.jpg" />
+          <q-carousel-slide :name="5" img-src="static/img/home/carousel/carousel5.jpg" />
         </q-carousel>
       </q-card>
     </div>
@@ -46,14 +26,8 @@
           people you love, the emotional moments that brought tears to your eyes, and
           gorgeous couple's portraits that will make you swoon - I am your girl!
         </p>
-        <q-btn
-          flat
-          class="paragraph-font text-h4"
-          text-color="primary"
-          size="md"
-          label="View the Pretty!"
-          to="/gallery"
-        />
+        <q-btn unelevated color="grey-3" class="paragraph-font text-h4" text-color="primary" size="md"
+          label="View the Pretty!" to="/gallery" />
       </div>
     </div>
     <div class="row text-center q-pt-lg">
@@ -67,17 +41,11 @@
               adorable fur babies. For me, it's all about love! I'm a sucker for true
               crime podcasts, themed girl dates with my friends, and all things Disney!
             </div>
-            <q-btn
-              flat
-              size="md"
-              text-color="primary"
-              class="paragraph-font"
-              label="Get to Know Me!"
-              to="/about"
-            />
+            <q-btn unelevated color="grey-3" size="md" text-color="primary" class="paragraph-font" label="Get to Know Me!"
+              to="/about" />
           </q-card-section>
           <q-card-section class="col-5 flex flex-center">
-            <q-img class="rounded-borders q-pa-md" src="static/img/IMG_0300.JPG" />
+            <q-img class="rounded-borders q-pa-md" src="static/img/about/about-page2.jpg" />
           </q-card-section>
         </q-card-section>
       </q-card>
@@ -85,8 +53,8 @@
     <div class="row text-center q-pt-xl">
       <q-card flat class="col-grow home-card bg-grey-1">
         <q-card-section horizontal>
-          <q-card-section class="col-4 flex flex-center">
-            <q-img fit="scale-down" class="rounded-borders" :src="getReviewImg()" />
+          <q-card-section class="col-5 flex flex-center">
+            <q-img class="rounded-borders" :src="getReviewImg()" style="height: 60%; width: 110%;"/>
           </q-card-section>
           <q-card-section class="q-pt-lg">
             <div class="text-h5 text-primary title-font q-ma-xs">Love Notes</div>
@@ -94,54 +62,36 @@
               {{ getReview() }}
             </div>
             <div class="text-caption text-right q-ma-xs">-{{ getReviewer() }}</div>
-            <q-btn
-              flat
-              size="md"
-              class="q-pt-xs paragraph-font"
-              text-color="primary"
-              label="More"
-              icon-right="chevron_right"
-              @click="incrementIndex()"
-            />
+            <q-btn flat size="md" class="q-pt-xs paragraph-font" text-color="primary" label="More"
+              icon-right="chevron_right" @click="incrementIndex()" />
           </q-card-section>
         </q-card-section>
       </q-card>
     </div>
-    <div class="home-card-lg q-px-sm text-center q-pt-lg">
+    <!-- <div class="home-card-lg q-px-sm text-center q-pt-lg">
       <q-card flat class="bg-grey-1">
         <div class="text-h5 col-11-md text-primary title-font q-pb-sm">
           Featured Weddings & Engagements
         </div>
         <q-card-section>
-          <q-img
-            v-for="wed in featuredWeds"
-            :key="wed.title"
-            :src="wed.img"
-            fit="scale-down"
-            class="rounded-borders col-3 q-ma-xs cursor-pointer"
-            style="height: 70%; width: 120px"
-            @click="$router.push(wed.galleryURL)"
-          >
+          <q-img v-for="wed in featuredWeds" :key="wed.title" :src="wed.img" fit="scale-down"
+            class="rounded-borders col-3 q-ma-xs cursor-pointer" style="height: 70%; width: 120px"
+            @click="$router.push(wed.galleryURL)">
             <div class="absolute-bottom text-center title-font" style="font-size: x-small">
               {{ wed.title }}
             </div>
           </q-img>
         </q-card-section>
       </q-card>
-    </div>
+    </div> -->
     <div class="flex-break" />
-    <div class="row text-h5 center text-primary title-font q-pl-lg q-pt-xl q-pb-md">
+    <div class="text-center offset-1 text-h5 text-primary title-font q-pl-md q-pt-nd q-pb-md">
       Let's Chat!
     </div>
     <div class="flex-break" />
     <div class="center" style="width: 70%">
-      <iframe
-        name="lc_contact_form"
-        frameborder="0"
-        width="100%"
-        height="600"
-        src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc"
-      />
+      <iframe name="lc_contact_form" frameborder="0" width="100%" height="600"
+        src="https://515338.17hats.com/p#/embed/fsvfbdvnckzxtkvcpztnsfghtrhgwkvc" />
     </div>
   </q-page>
 </template>
@@ -152,7 +102,7 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "IndexPage",
   setup() {
-    let reviewIndex = 0;
+    let reviewIndex = ref(0);
 
     const reviews = [
       {
@@ -165,7 +115,7 @@ export default defineComponent({
           "very easy and comfortable. We had never really been in a photoshoot before, but she set up our poses " +
           "perfectly and gave all the right cues to make sure we got an excellent variety of photos.",
         reviewer: "Owen & Claire",
-        img: "static/img/IMG_0300.JPG",
+        img: "static/img/home/reviews/review1.jpg",
       },
       {
         review:
@@ -178,7 +128,7 @@ export default defineComponent({
           "assistant were both extremely nice and friendly. I will forever be thankful for the for the wonderful photos we have to remind " +
           "us of our wedding day.",
         reviewer: "Nick & Claire",
-        img: "some img",
+        img: "static/img/home/reviews/review2.jpg",
       },
       {
         review:
@@ -188,7 +138,7 @@ export default defineComponent({
           "captured because Kayla was always there and ready. We love every single one of our photos and get compliments " +
           "on them all the time. The process of working with Kayla was so fun and easy that I would recommend her to anyone!",
         reviewer: "Jordan & Madison",
-        img: "some img",
+        img: "static/img/home/reviews/review3.jpg",
       },
     ];
 
@@ -234,26 +184,26 @@ export default defineComponent({
     // reviews.length = total number of reviews, but array index is total - 1,
     // therefore, we must check index + 2
     function incrementIndex() {
-      if (reviewIndex + 2 > reviews.length) {
-        reviewIndex = 0;
+      if (reviewIndex.value + 2 > reviews.length) {
+        reviewIndex.value = 0;
       } else {
-        reviewIndex++;
+        reviewIndex.value++;
       }
     }
 
     function getReview() {
-      return reviews[reviewIndex].review;
+      return reviews[reviewIndex.value].review;
     }
 
     function getReviewImg() {
-      return reviews[reviewIndex].img;
+      return reviews[reviewIndex.value].img;
     }
 
     function getReviewer() {
-      return reviews[reviewIndex].reviewer;
+      return reviews[reviewIndex.value].reviewer;
     }
 
-    function routeToGallery() {}
+    function routeToGallery() { }
 
     return {
       slide: ref(1),
@@ -275,9 +225,11 @@ export default defineComponent({
 .flex-break {
   flex: 1 0 100% !important;
 }
+
 .row .flex-break {
   height: 0 !important;
 }
+
 .column .flex-break {
   width: 0 !important;
 }

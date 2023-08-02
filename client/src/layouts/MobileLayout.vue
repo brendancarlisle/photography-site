@@ -10,7 +10,7 @@
             <q-btn class="absolute-top-right" size="lg" dense flat icon="close" v-close-popup />
           <q-card-section class="absolute-center text-center text-h5 text-primary">
             <q-list>
-              <q-item clickable to="/home">
+              <q-item clickable to="/">
                 HOME
               </q-item>
               <q-item clickable to="/about">
@@ -41,15 +41,14 @@
       <q-toolbar>
         <div>
           <!-- <q-icon name="fa-brands fa-facebook-f" /> -->
-          <q-btn flat size="md" icon="fa-brands fa-facebook-f" @click="routeToFacebook"/>
-          <q-btn flat size="md" icon="fa-brands fa-instagram" @click="routeToInsta"/>
+          <q-btn flat size="sm" icon="fa-brands fa-facebook-f" @click="routeToFacebook"/>
+          <q-btn flat size="sm" icon="fa-brands fa-instagram" @click="routeToInsta"/>
         </div>
         <q-space />
-        <div class="absolute-center">Photographing weddings in the St. Louis metro area and beyond</div>
-        <q-space />
+        <!-- <div class="absolute-center">Photographing weddings in the St. Louis metro area and beyond</div> -->
+        <!-- <q-space /> -->
         <div class="text-left">
-          Email: kayla@weddingsbykmc.com <br />
-          Phone: 618-334-3237
+          Email: kayla@weddingsbykmc.com
         </div>
       </q-toolbar>
     </q-footer>

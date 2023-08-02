@@ -62,15 +62,15 @@ const mobileRoutes = [
 
   {
     path: '/about',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/MobileLayout.vue'),
     children: [
-      { path: '', component: () => import('src/pages/Desktop/AboutPage.vue') }
+      { path: '', component: () => import('src/pages/Mobile/AboutPage.vue') }
     ]
   },
 
   {
     path: '/contact',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/MobileLayout.vue'),
     children: [
       { path: '', component: () => import('src/pages/Desktop/ContactPage.vue') }
     ]
@@ -78,17 +78,17 @@ const mobileRoutes = [
 
   {
     path: '/gallery',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/MobileLayout.vue'),
     children: [
-      { path: '', component: () => import('src/pages/Desktop/GalleryPage.vue') }
+      { path: '', component: () => import('src/pages/Mobile/GalleryPage.vue') }
     ]
   },
 
   {
     path: '/investment',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/MobileLayout.vue'),
     children: [
-      { path: '', component: () => import('src/pages/Desktop/InvestmentPage.vue') }
+      { path: '', component: () => import('src/pages/Mobile/InvestmentPage.vue') }
     ]
   },
   // Always leave this as last one,
@@ -99,11 +99,10 @@ const mobileRoutes = [
   }
 ]
 
-// if (Platform.is.desktop) {
-//   routes = desktopRoutes
-// } else {
-//   routes = mobileRoutes
-// }
-routes = desktopRoutes;
+if (Platform.is.desktop) {
+  routes = desktopRoutes
+} else {
+  routes = mobileRoutes
+}
 
 export default routes
